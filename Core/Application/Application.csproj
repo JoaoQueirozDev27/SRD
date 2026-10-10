@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="UseCases\Fields\AddField\Exception\**" />
+    <EmbeddedResource Remove="UseCases\Fields\AddField\Exception\**" />
+    <None Remove="UseCases\Fields\AddField\Exception\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Domain.csproj" />
+  </ItemGroup>
+
+</Project>

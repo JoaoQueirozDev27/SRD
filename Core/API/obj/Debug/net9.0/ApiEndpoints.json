@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "API.Controllers.RuleRelationalOperatorController",
+    "Method": "Execute",
+    "RelativePath": "api/Rules/RelationalOperator/Execute",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "API.DTOs.Rules.RuleRelationalOperatorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Rules/RelationalOperator/Execute": {
+      "post": {
+        "tags": [
+          "RuleRelationalOperator"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RuleRelationalOperatorDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RuleRelationalOperatorDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RuleRelationalOperatorDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "RuleRelationalOperatorDTO": {
+        "type": "object",
+        "properties": {
+          "operator": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "value1": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "value2": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
